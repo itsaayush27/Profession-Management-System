@@ -1,0 +1,129 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #141618;
+  margin: 0;
+  padding: 20px;
+  color: white;
+}
+
+
+/* Headings */
+h2 {
+  color:white;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #007bff;
+}
+
+/* Age + Gender Row */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+}
+
+#datanotfound {
+  display: none;           /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Button Styling */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Messages */
+.message {
+  margin: 10px 0;
+  font-weight: bold;
+  color: green;
+}
+
+/* Employee Cards */
+.employee-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background: #fff;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.employee-info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #a71d2a;
+}
+
+/* Data Not Found */
+#datanotfound {
+  margin-top: 10px;
+  color: #888;
+  font-style: italic;
+  display: none; /* hidden until needed */
+}
